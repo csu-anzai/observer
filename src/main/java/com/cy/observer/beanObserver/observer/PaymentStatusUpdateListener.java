@@ -1,4 +1,4 @@
-package com.cy.observer.BeanObserver.observer;
+package com.cy.observer.beanObserver.observer;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;

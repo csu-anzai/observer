@@ -1,22 +1,18 @@
 package com.cy.observer;
 
-import com.cy.observer.BeanObserver.observer.PaymentStatusUpdateListener;
-import com.cy.observer.BeanObserver.subject.PaymentStatusUpdateBean;
+import com.cy.observer.beanObserver.observer.PaymentStatusUpdateListener;
+import com.cy.observer.beanObserver.subject.PaymentStatusUpdateBean;
 import com.cy.observer.jdkObserver.observer.JdkEmailObserver;
 import com.cy.observer.jdkObserver.observer.JdkStockObserver;
 import com.cy.observer.jdkObserver.subject.JdkPaymentStatusObservable;
 import com.cy.observer.myObserver.observer.impl.MyEmailObserver;
 import com.cy.observer.myObserver.observer.impl.MyStockObserver;
 import com.cy.observer.myObserver.subject.impl.MyPaymentStatusUpdateSubject;
-import com.cy.observer.springObserver.event.PaymentStatusUpdateEvent;
 import com.cy.observer.springObserver.service.PaymentService;
-import com.cy.observer.springObserver.subject.PaymentInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.PayloadApplicationEvent;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
